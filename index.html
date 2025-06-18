@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="dk">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bogormen</title>
+
+		<link rel="stylesheet" href="styles/style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mynerve&display=swap"
+			  rel="stylesheet">
+
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<!-- Search and logo -->
+		<nav class="nav-top">
+			<div class="wrapper">
+				<a href="index.html">
+					<img src="assets/graphics/bogormen-logo.svg" alt="Bogormen logo">
+				</a>
+
+				<label for="search" class="sr__only">Search</label>
+				<input type="search" id="search" placeholder="Søg på titel, forfatter el. ISBN">
+			</div>
+		</nav>
+		<!-- Main nav -->
+		<nav class="nav-main">
+			<div class="wrapper">
+				<ul class="device-desktop">
+					<li><a href="#">Aktuelt</a></li>
+					<li><a href="#">Kategorier</a></li>
+					<li><a href="#">Bestsellere</a></li>
+					<li><a href="#">Gaver</a></li>
+					<li><a href="#">Brugte bøger</a></li>
+				</ul>
+				<button class="device-mobile btn btn-icon">
+					<img src="assets/graphics/bars.svg" alt="Burger menu icon">
+				</button>
+
+				<!-- Split up in the css -->
+
+				<ul>
+					<li>
+						<button class="btn btn-empty" onclick="openSignupDialog()">
+							<img src="assets/graphics/member.svg" alt="Medlem stjerne">
+							<span class="device-desktop">Bliv medlem</span>
+						</button>
+					</li>
+					<li><a href="#">
+						<img src="assets/graphics/user.svg" alt="Log ind Icon">
+						<span class="device-desktop">Log ind</span>
+					</a></li>
+					<li><a href="#">
+						<img src="assets/graphics/bag.svg" alt="Kurv Icon">
+						<span class="device-desktop">Kurv</span>
+					</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<header>
+			<!-- Hero -->
+			<div class="wrapper padding-block-2 hero">
+				<img src="assets/images/sommerlaesning-hero.jpg" alt="">
+				<div class="hero__content">
+					<h2 class="text-scribble">Ferietid = læsetid</h2>
+					<h1 class="text-serif">Bogormens bedste bud til din<br>sommerferielæsning</h1>
+					<a href="" class="btn">Shop nu</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- Hits -->
+
+			<section class="wrapper padding-block-2">
+				<h2 class="text-scribble">Hitter lige nu</h2>
+				<p class="text-serif">Inviter hyggen ind med de mest populære udgivelser lige nu - find dem <a href="#">her</a>!</p>
+				<div class="hits__container padding-block-2">
+					<div class="card text-serif">
+						<div class="card__image">
+							<img src="assets/images/doede-sjaele-synger-ikke-jussi-adler-olsen.webp" alt="doede-sjaele-synger-ikke-jussi-adler-olsen.webp">
+						</div>
+						<p class="title">Døde sjæle synger ikke</p>
+						<p class="author">Jussi Adler-Olsen</p>
+						<p class="price">229,95 DKK</p>
+						<p class="stars">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne-halv.svg" alt="Stjerne halv">
+							<span>(235)</span>
+						</p>
+					</div>
+
+					<div class="card text-serif">
+						<div class="card__image">
+							<img src="assets/images/himlen-over-vildmarken-kristin-hannah.webp" alt="himlen-over-vildmarken-kristin-hannah.webp">
+						</div>
+						<p class="title">Himlen over vildmarken</p>
+						<p class="author">Kristin Hannah</p>
+						<p class="price">149,95 DKK</p>
+						<p class="stars">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<span>(167)</span>
+						</p>
+					</div>
+
+					<div class="card text-serif">
+						<div class="card__image">
+							<img src="assets/images/huset-jebsen-flemming-hoejbo.webp" alt="huset-jebsen-flemming-hoejbo.webp">
+						</div>
+						<p class="title">Huset Jebsen</p>
+						<p class="author">Flemming Højbo</p>
+						<p class="price">299,95 DKK</p>
+						<p class="stars">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne-ingen.svg" alt="Stjerne ingen">
+							<span>(122)</span>
+						</p>
+					</div>
+
+					<div class="card text-serif">
+						<div class="card__image">
+							<img src="assets/images/inden-aaret-er-omme-lea-korsgaard.webp" alt="inden-aaret-er-omme-lea-korsgaard.webp">
+						</div>
+						<p class="title">Inden året er omme</p>
+						<p class="author">Lea Korsgaard</p>
+						<p class="price">229,95 DKK</p>
+						<p class="stars">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne-halv.svg" alt="Stjerne halv">
+							<span>(96)</span>
+						</p>
+					</div>
+
+					<div class="card text-serif">
+						<div class="card__image">
+							<img src="assets/images/sophias-triumf-corina-bomann.webp" alt="sophias-triumf-corina-bomann.webp">
+						</div>
+						<p class="title">Sophias triumf</p>
+						<p class="author">Corina Bomann</p>
+						<p class="price">199,95 DKK</p>
+						<p class="stars">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne-halv.svg" alt="Stjerne halv">
+							<img src="assets/graphics/stjerne-ingen.svg" alt="Stjerne ingen">
+							<span>(141)</span>
+						</p>
+					</div>
+
+					<div class="card text-serif">
+						<div class="card__image">
+							<img src="assets/images/hvor-flodkrebsene-synger-delia-owens.webp" alt="hvor-flodkrebsene-synger-delia-owens.webp">
+						</div>
+						<p class="title">Hvor flodkrebsene synger</p>
+						<p class="author">Delia Owens</p>
+						<p class="price">129,95 DKK</p>
+						<p class="stars">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne.svg" alt="Stjerne">
+							<img src="assets/graphics/stjerne-halv.svg" alt="Stjerne halv">
+							<span>(157)</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Ny udkommet -->
+			<section class="wrapper margin-block-2">
+				<div class="new_release">
+					<div class="book_image__container">
+						<img src="assets/images/langfredag-sofie-sarenbrant.webp" alt="langfredag-sofie-sarenbrant">
+					</div>
+					<div class="text-serif text__content">
+						<h2 class="text-scribble">Ny Krimi: Langfredag</h2>
+						<p>Sæsonpræmieren på et stort talkshow udvikler sig for rullende kameraer til en truende gidselsituation.</p>
+						<p>
+							Det er langfredag, og der er sæsonpræmie på talkshowet Frida-y. Spotlights bader scenen i lys, og publikum sidder forventningsfuldt
+							på
+							deres
+							pladser.
+						</p>
+						<p>
+							I kulissen venter den kontroversielle gæst, som tv-vært Frida von Engen har inviteret med for at sikre tårnhøje seertal til aftenens
+							præmiere. Men midt i livesendingen træder en maskeret figur frem fra skyggerne, og under den mørke hættetrøje gemmer sig en
+							bombevest.
+							Der
+							er ingen tvivl om, at truslen er reel: ”Hvis I afbryder udsendelsen, dør alle.” Det bliver et syv timer langt nervepirrende
+							gidseldrama
+							for
+							rullende kameraer.
+						</p>
+						<h3>Fortsættelsen til Fødselsdagen</h3>
+						<p>
+							Langfredag er den fritstående fortsættelse af Fødselsdagen (2024), der har solgt over 200.000 eksemplarer i Sverige. Den succesrige
+							duo
+							Sofie
+							Sarenbrant og Carina Bergfeldt fortsætter med endnu et hæsblæsende plot fyldt med komplekse relationer og uventede forviklinger.
+						</p>
+						<a href="#" class="btn">Køb bogen her</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="socials-and-payopts wrapper padding-block-2">
+				<a href="https://snapchat.com">
+					<img src="assets/graphics/snapchat.svg" alt="Snapchat">
+				</a>
+				<a href="https://instagram.com">
+					<img src="assets/graphics/instagram.svg" alt="Instagram">
+				</a>
+				<a href="https://facebook.com">
+					<img src="assets/graphics/facebook.svg" alt="Facebook">
+				</a>
+				<hr>
+				<img src="assets/graphics/visa-electron.png" alt="Visa electron">
+				<img src="assets/graphics/visa.png" alt="Visa">
+				<img src="assets/graphics/mastercard.png" alt="Mastercard">
+				<img src="assets/graphics/dankort.png" alt="Dankort">
+				<img src="assets/graphics/mobilepay.png" alt="Mobilepay">
+			</div>
+
+			<section class="pagefooter text-serif">
+				<div class="about">
+					<a href="index.html" class="logo">
+						<img src="assets/graphics/bogormen-logo.svg" alt="bogormen-logo">
+					</a>
+					<p>
+						Hos Bogormen elsker vi bøger –de ægte, trykte sider, du kan dufte, mærke og tage med dig overalt. I over 20 år har vi haft passion for
+						den fysiske bog og alt det, den kan give dig: fordybelse, viden, eventyr og eftertanke.
+					</p>
+					<p>
+						Vi tror på at bøger gør en forskel – og vi er med hele vejen fra forfatterens første idé til du står med bogen i hånden og vender den
+						sidste side.
+					</p>
+					<p class="text-bold">
+						Gode bøger fortjener godt papir.
+					</p>
+				</div>
+
+				<ul>
+					<li><h3>Kundeservice</h3></li>
+					<li><a href="#">Kontakt</a></li>
+					<li><a href="#">Spørgsmål og svar</a></li>
+					<li><a href="#">Returnering</a></li>
+				</ul>
+
+				<ul>
+					<li><h3>Handel</h3></li>
+					<li><a href="#">E-mærket</a></li>
+					<li><a href="#">Cookiepolitik</a></li>
+					<li><a href="#">Handelsbetingelser</a></li>
+					<li><a href="#">Klubvilkår</a></li>
+					<li><a href="#">Persondatapolitik</a></li>
+				</ul>
+			</section>
+			<div class="copyright">© Copyright Bogormen 2025</div>
+		</footer>
+
+		<div class="signup__dialog" style="display: none;">
+			<div class="bg_darkener"></div>
+			<div class="signup__modal wrapper">
+				<div class="container">
+					<div class="actionbar">
+						<button class="btn btn-icon close-btn" onclick="closeSignupDialog()"><img src="assets/graphics/x-solid.svg" alt="Close icon"></button>
+					</div>
+					<!-- Disabling form validation because im making my own in JS -->
+					<form class="signup__form" onsubmit="event.preventDefault();" onchange="removeErrors()" novalidate>
+						<h2 class="text-serif col__span-full">Blive medlem af klubben</h2>
+						<h3 id="valid-text" class="col__span-full"></h3>
+
+						<div>
+							<label for="name" class="sr__only">Navn</label>
+							<input type="text" id="name" placeholder="Navn">
+							<p id="name-error" class="error_message"></p>
+						</div>
+						<div>
+							<label for="phone" class="sr__only">Telefonnummer</label>
+							<input type="tel" id="phone" placeholder="Telefonnummer">
+							<p id="phone-error" class="error_message"></p>
+						</div>
+
+						<div class="col__span-full">
+							<label for="email" class="sr__only">Email-adresse</label>
+							<input type="email" id="email" placeholder="Email-adresse">
+							<p id="email-error" class="error_message"></p>
+						</div>
+
+						<div>
+							<label for="password" class="sr__only">Adgangskode</label>
+							<input type="password" id="password" placeholder="Adgangskode">
+							<p id="password-error" class="error_message"></p>
+						</div>
+						<div>
+							<label for="password-confirm" class="sr__only">Bekræft adgangskode</label>
+							<input type="password" id="password-confirm" placeholder="Bekræft adgangskode">
+							<p id="password-confirm-error" class="error_message"></p>
+						</div>
+
+						<div class="accept-terms col__span-full">
+							<input type="checkbox" id="accept-terms">
+							<label for="accept-terms">
+								Jeg godkender <a href="#">medlemsvilkårfor</a> kundeklubben og bekræfter, at jeg har læst
+								<a href="#">persondatapolitikken</a>, hvor behandling af personoplysninger fremgår.
+								<span id="terms-error" class="error_message"></span>
+							</label>
+						</div>
+						<button type="submit" class="btn text-serif" onclick="validateSignupForm()">Tilmeld mig</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/signup_dialog.js"></script>
+	</body>
+</html>
